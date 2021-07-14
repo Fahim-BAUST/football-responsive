@@ -30,7 +30,7 @@ body{
     margin-bottom: 20px;
 }
 
- .top-title-button .top-button, .highlights .highlights-button{
+ .top-title-button .top-button, .highlights .highlights-button, .sign-in-button , .submit-comment-button{
      text-decoration: none;
      background-color: #E02C6D;
      color: #FFFFFF;
@@ -53,6 +53,13 @@ body{
 .top-banner:hover img{
     transform: rotate(360deg) scale(1.5);
     transition: transform 3s ease-out;
+}
+
+.top-title-button:hover .top-title{
+    transform: scale(1.5) ;
+    color:red;
+    background-color: yellow;
+    transition: transform 3s , color 3s , background-color 3s;
 }
 
 /* players section  */
@@ -119,12 +126,63 @@ body{
     width: 567px;
 
 }
+
+/* sign-in section  */
+
+.sign-in{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: antiquewhite;
+    margin-top: 100px;
+    padding-bottom: 50px;
+    
+}
+.sign-in a{
+    background-color: tomato;
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.sign-in input{
+    border: none;
+    padding: 5px 15px;
+    font-size: 20px;
+    background-color: lightgray;
+    margin-bottom: 20px;
+}
+
+
+/* comment section  */
+
+.add-comment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-comment p{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#visitor-comment{
+    border: none;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 40px rgba(243, 6, 6, 0.418);
+}
+
+
+
 /* footer style  */
 .footer-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 160px;
+    margin-top: 70px;
     margin-bottom: 63px;
 
 }
@@ -139,6 +197,8 @@ body{
     color: rgb(168, 166, 166);
     font-size: 1.23em;
 }
+
+
 
 
 /*-------- 
